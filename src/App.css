@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  /* Adicionando uma fonte mais limpa */
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms; /* Adicionado transform */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cff66);
+  transform: scale(1.05); /* Um leve zoom ao passar o mouse */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb66);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2.5em;
+  margin-top: 2rem;
+  border-radius: 12px;
+  background-color: #f9f9f9; /* Um fundo leve para destacar o card */
+  border: 1px solid #eeeeee;
+  transition: border-color 0.25s;
+}
+
+.card:hover {
+  border-color: #646cff; /* Realce suave no hover */
+}
+
+.read-the-docs {
+  color: #888;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+}
+
+/* Ajuste básico para botões, caso existam no seu card */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: #535bf2;
+}
